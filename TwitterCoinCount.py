@@ -3,6 +3,15 @@ import openpyxl
 import time
 import requests
 import datetime
+import os
+
+consumer_key = os.environ.get("consumer_key")
+consumer_secret = os.environ.get("consumer_secret")
+access_token = os.environ.get("access_token")
+access_token_secret = os.environ.get("access_token_secret")
+TOKEN = os.environ.get("TOKEN")
+CHAT_ID = os.environ.get("CHAT_ID")
+
 #可以正常运行了 持续运行
 #添加发送功能
 def get_tweets():
